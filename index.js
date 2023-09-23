@@ -6,7 +6,7 @@ db.sequelize.sync();
 
 // CORS
 const corsOptions = {
-    origin: '*'
+    origin: process.env.ORIGIN
 };
 app.use(cors(corsOptions));
 
