@@ -8,7 +8,7 @@ db.sequelize.sync();
 const corsOptions = {
     origin: process.env.ORIGIN,
     methods: ['GET', 'PUT', 'POST', 'DELETE'],
-    allowedHeaders: ['Authorization', 'X-API-KEY', 'X-Requested-With', 'Origin', 'Content-Type', 'X-Auth-Token', 'Accept', 'Access-Control-Allow-Request-Method'],
+    allowedHeaders: ['Authorization', 'x-access-token', 'X-API-KEY', 'X-Requested-With', 'Origin', 'Content-Type', 'X-Auth-Token', 'Accept', 'Access-Control-Allow-Request-Method'],
 };
 app.use(cors(corsOptions));
 
